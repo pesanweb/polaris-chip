@@ -1,0 +1,1 @@
+import{s as t,i as e,x as r}from"./6e2b8df0.js";class s extends t{static get tag(){return"my-card"}constructor(){super(),this.title="My card"}static get styles(){return e`:host{display:block}`}render(){return r`<div>${this.title}</div>`}static get properties(){return{title:{type:String}}}}globalThis.customElements.define(s.tag,s);
