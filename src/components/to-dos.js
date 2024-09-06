@@ -65,7 +65,7 @@ class ToDos extends LitElement {
       <li ?completed=${todo.completed}>
         <span class="todo-title"> ${todo.title} </span>
         <button @click=${() => this._completeTodo(todo)}>
-          ${todo.completed ? "Tandai Belum Selesai Boss" : "Bosss Selesai"}
+          ${todo.completed ? "Tandai Belum Selesai Bossku" : "Bosss Selesai"}
         </button>
       </li>
     `;
