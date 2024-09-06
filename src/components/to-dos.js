@@ -13,15 +13,17 @@ class ToDos extends LitElement {
         },
     };
 
-// text docoration underline, overline; underline overline;line-through;
+// text docoration underline overline; // text docoration underline, overline; underline overline;line-through; 
+// referensi css https://www.w3schools.com/cssref/css3_pr_text-decoration-style.php
 
-
-h3 {
-  text-decoration: underline;
     static styles = css`
     li[completed] {
-      text-decoration: underline overline;
-      color: red
+      /* text-decoration: underline overline;
+      text-decoration-style: wavy; */
+      text-decoration-line: underline;
+      text-decoration-style: double;
+      color: burlywood
+
     }
 
     li .todo-title {
