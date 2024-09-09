@@ -14,19 +14,22 @@ export class MyCard extends LitElement {
 
   constructor() {
     super();
-    this.title = "My card";
+    this.title = "Kartuku ada Pada Title";
   }
 
   static get styles() {
     return css`
       :host {
-        display: block;
+        display: flexbox;
       }
     `;
   }
 
   render() {
-    return html`<div>${this.title}</div>`;
+    return html`
+    <div>${this.title}</div>
+    <div>${this.title}</div>
+    `;
   }
 
   static get properties() {

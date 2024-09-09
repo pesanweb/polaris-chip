@@ -10,10 +10,15 @@ class MyReactive extends LitElement{
  constructor(){
     super();
     this.name = 'Belajar reactive property di LIT';
+    this.class = 'Pemula';
  }
 
  render() {
-    return html` <h1>${this.name}</h1>`;
+    return html` <h1>${this.name}</h1>
+    
+    <h3>${this.name}</h3>
+    <h6>${this.class}</h6>
+    `;
  }
 
 }
