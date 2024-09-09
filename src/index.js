@@ -1,5 +1,6 @@
 import './components/title-app.js';
 import './components/to-dos.js';
+import '../node_modules/label-more-lit/label-more-lit.js';
 
 
 const todosContainer = document.querySelector('#todo-container');
