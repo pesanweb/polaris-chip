@@ -12,9 +12,12 @@
     "build": "rimraf dist && rollup -c rollup.config.js && npm run analyze -- --exclude dist",
     "start:build": "web-dev-server --root-dir dist --app-index index.html --open",
     "analyze": "cem analyze --litelement",
-    "start": "web-dev-server"
+    "start": "web-dev-server",
+	"build-frontend": "rimraf dist && rollup -c rollup.config.js && npm run analyze -- --exclude dist",
+    "build-server-exe": "pkg ."
   },
   "dependencies": {
+    "express": "^5.1.0",
     "lit": "^3.1.4"
   },
   "devDependencies": {
@@ -44,6 +47,12 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-workbox": "^8.1.0",
     "storybook": "^7.6.19"
+  },
+    "bin": "server-static.js", 
+  "pkg": {
+    "assets": "dist/**/*", 
+    "targets": [ "node18-win-x64"], 
+    "outputPath": "executable-builds" 
   },
   "customElements": "custom-elements.json"
 }
